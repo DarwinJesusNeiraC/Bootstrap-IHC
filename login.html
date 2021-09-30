@@ -13,27 +13,51 @@
   <!--aling-items-center = vertical, justify-content-center = horizontal-->
   <div class="bg-image">
   <!--position-absolute top-50 start-50 translate-middle es para que este en el centro-->
-    <div class="container d-flex aling-items-center d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
-      <div class="row">
-        <div class="col-12 bg-light">
-
-          <button><img src="./images/google.png "/> Inicio de Sesión a Google</button>
+    <div class="container d-flex aling-items-center d-flex justify-content-center position-absolute top-50 start-50 translate-middle h-50">
+      <div class="row justify-content-center">
+        <div class="col-20 bg-light ">
+          <!--Boton de incio de sesion con google-->
+          <div class="py-3">
+            <button class="col-20 w-100 bg-info"><img src="./images/google.png "/> Inicio de Sesión a Google</button>
+          </div>
           <p>------------------------------ o ------------------------------ </p>
+          
           <!--Inicio del formulario de ingreso de datos-->
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
+          <div class="row">
+            <label class="col-sm-6 col-form-label">Email</label>
+            <div class="col-sm-14">
               <input type="text" class="form-control" value="email@example.com">
             </div>
           </div>
-          <div class="mb-3 row">
-            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
+
+          <div class="row">
+            <label for="inputPassword" class="col-sm-6 col-form-label">Password</label>
+            <div class="col-sm-14">
               <input type="password" class="form-control" id="inputPassword">
             </div>
           </div>
           <!--Fin del formulario de ingreso de datos-->
-          <a href="#">¿Olvidaste tu contraseña?</a> <!--Link de recuperacion de contraseña-->
+
+          <!--Boton de incio de sesion despues de ingreso de datos-->
+          <div class="py-3">
+            <button class="col-20 h-25 w-100 bg-primary text-white">Iniciar de Sesión</button>
+          </div>
+
+          <div class="row py-3 ">
+            <!--Checkbox de Recordar sesión-->
+            <div class="col-20 col-lg-5">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Recordar Sesión</label>
+              </div>
+            </div>
+
+            <!--Opcion de recuperacion de contraseña-->
+            <div class="col-20 col-lg-7">
+              <a href="#">¿Olvidaste tu contraseña?</a> <!--Link de recuperacion de contraseña-->
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
