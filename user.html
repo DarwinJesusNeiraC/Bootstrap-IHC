@@ -7,7 +7,7 @@
     <script src=""></script>
   </head>
   <body>
-    <div class="container vh-100">
+    <div class="container vh-100 border">
       <!--Opciones Superiores-->
       <div class="row">
         <div class="col-3 border">
@@ -27,13 +27,24 @@
         </div>
       </div>
       <!--Seccion inferior-->
-      <div class="row">
-        <div class="col">seccion de cursos y paneles</div>
-        <div class="col">
-          Imagen, nombre y bibliografia
-          <div class="d-flex">
-            <h1>Darwin Jesus Neira Carrasco</h1>
-            <img src="./images/Darwin_foto.jpeg" class="rounded-circle"/>
+      <div class="row vh-100">
+        <div class="col-4">seccion de cursos y paneles</div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex">
+                <h1>Darwin Jesus Neira Carrasco</h1>
+                <img src="./images/Darwin_foto.jpeg" class="rounded-circle"/>
+              </div>
+            </div>
+            <div class="col-12">
+              <fieldset>
+                <legend>Bibliografia</legend>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 330px"></textarea>
+                </div>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
