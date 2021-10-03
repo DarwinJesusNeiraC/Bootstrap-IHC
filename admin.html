@@ -85,12 +85,20 @@
             <div class="col-6">
               <fieldset>
                 <legend>Privacidad</legend>
-                <div class="row">
+                <div class="row border" style="margin-left: 10px;">
                   <div class="col-12">
-                    <p><img src="./images/switch.png"/>Mostrar estado de conección</p>
+                    <!--<p><img src="./images/switch.png"/>Mostrar estado de conección</p>-->
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Mostrar estado de Conección</label>
+                    </div>
                   </div>
-                  <div class="col-12">
-                    <p><img src="./images/switch.png"/>Notificaciones</p>
+                  <div class="col-12" style="margin-top: 20px;">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Notificaciones</label>
+                    </div>
+                    <!--<p><img src="./images/switch.png"/>Notificaciones</p>-->
                   </div>
                 </div>
               </fieldset>
